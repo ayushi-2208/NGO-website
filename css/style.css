@@ -1,0 +1,377 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  #navbar {
+    display: flex;
+    float: right;
+    align-items: center;
+    position: relative;
+    top:0;
+  }
+  
+  #logo {
+    margin: 2px 1px;
+    padding: 0px 2px;
+  }
+  #logo img {
+      float: left;
+      width: 10%;
+      height: 150px;
+      padding-top: 1px;
+  }
+  #navbar ul {
+      display: flex;
+     
+  }
+  #navbar ul li {
+    list-style: none;
+    font-size: 1.8rem;
+    font-family: 'Staatliches', cursive;
+    margin: 5px 3px;
+    padding-top: 20px;
+    
+  }
+  #navbar ul li a {
+    color: black;
+    display: block;
+    padding: 1px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: 0.8s;
+  }
+  #navbar ul li a:hover {
+    color: black;
+    background-color: white;
+  }
+ 
+  #home {
+    display: flex;
+    flex-direction: column;
+    float: left;
+    padding: 300px 0px;
+    height: 100px;
+    /*justify-content: center;
+    align-items: center;*/
+  }
+  #home::before {
+    content: "";
+    position: absolute;
+    background: url("../image/bg.jpg") no-repeat center center/cover;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+  }
+  #home h2{
+    color: black;
+    text-align: left;
+    float: left;
+    font-size: 30px;
+    font-family: 'Stint Ultra Condensed', cursive;
+  }
+  #home p {
+    color: black;
+    text-align: left;
+    float: left;
+    font-size: 3.5em;
+    font-family: 'Staatliches', cursive;
+  }
+  #home .hero-btn{
+      display: inline-block;
+      border-radius: 20px;
+      text-decoration: none;
+      color: black;
+      border: 1px solid black;
+      padding:12px 34px;
+      font-size: 16px;
+      font-weight: 300;
+      font-family: "Balsamiq Sans", cursive;
+      background: transparent;
+      width: 30%;
+      cursor: pointer;
+  }
+  #home .hero-btn:hover{
+      background: rgb(184, 182, 182);
+      transition: 1s;
+  }
+  
+  #about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 90vh;
+    width: 85vw;
+    margin: 0 auto;
+  }
+  .image {
+    background: url("../image/bg2.jpg") center/cover no-repeat;
+    border-radius: 30px;
+  }
+  .content {
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .content h1 {
+    text-transform: uppercase;
+    font-size: 36px;
+    letter-spacing: 6px;
+    opacity: 0.9;
+    font-family: 'Stint Ultra Condensed', cursive
+  }
+  .content span {
+    height: 0.5px;
+    width: 80px;
+    background: #777;
+    margin: 30px 0;
+  }
+  .content p {
+    padding-bottom: 15px;
+    font-weight: 300;
+    font-family: "Balsamiq Sans", cursive;
+    opacity: 0.7;
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 1.7;
+  }
+  .container{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+  }
+  
+  .box {
+      border: 2px solid gray;
+    width: 25%;
+    height: 300px;
+    padding: 20px 30px;
+    margin: 20px;
+    box-sizing: border-box;
+    border-radius: 15px 50px 30px;
+    background: #f2f2f2;
+    flex-direction: initial;
+
+  }
+  .box:hover{
+      cursor: pointer;
+      background: rgb(179, 175, 175);
+      box-shadow: initial;
+  }
+  
+  .box img{
+      display: block;
+      margin: auto;
+      height: 100px;
+      padding: 30px 0 0 0;
+  }
+  .box h2 {
+      text-align: center;
+      margin: 40px 0 0 0;
+  }
+
+  .box p {
+      text-align: center;
+    font-family: "Balsamiq Sans", cursive;
+  }
+  #blog {
+      text-align: center;
+      align-items: center;
+      margin: 28px;
+
+  }
+  .plan{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+  }
+  #blog h1{
+      font-size: 5em;
+      height: 80px;
+      font-family: 'Stint Ultra Condensed', cursive;
+      margin: 3%;
+
+  }
+  #blog p{
+      font-size: 1em ;
+      font-family: "Balsamiq Sans", cursive;
+  }
+ 
+  #blog .square {
+    border: 2px solid black;
+    border: 2px solid black;
+    padding: 12px;
+    margin: 20px 25px;
+    border-radius: 24px;
+    box-shadow: 10px 10px 5px grey;
+    background: #f2f2f2;
+  }
+  #blog .square img {
+    height: 230px;
+    margin: auto;
+    display: block;
+  }
+  #blog .square h2{
+      font-style: bold;
+    font-family: 'Nunito', sans-serif;
+  }
+  #blog .square p {
+    font-family: "Balsamiq Sans", cursive;
+  }
+  #contact{
+      position: relative;
+      min-height: 80vh;
+      padding: 30px 80px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background: url("../image/bg3.jpg");
+      background-size: cover;
+  }
+  #contact .contents{
+      max-width: 800px;
+      text-align: center;
+  }
+  #contact .contents h2{
+      font-size: 3.5em;
+      font-weight: 800;
+      color: #fff;
+      font-family: 'Nunito', sans-serif;
+      
+  }
+  #contact .contents p{
+    font-weight: 300;
+    color: #fff;
+    font-family: "Balsamiq Sans", cursive;
+}
+  #contact .containers{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    float: left;
+}
+#contact .containers .contactInfo{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+
+}
+#contact .containers .contactInfo .boxx{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+#contact .containers .contactInfo .boxx .icon{
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+
+}
+#contact .containers .contactInfo .boxx  .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: black;
+    flex-direction: column;
+    font-weight: 300;
+}
+#contact .containers .contactInfo .boxx .text h3{
+    font-size: 1.5em;
+    font-weight: 600;
+    color: black;
+    font-family: 'Nunito', sans-serif;
+
+
+}
+#contact .containers .contactInfo .boxx .text p{
+    color: black;
+    font-family: "Balsamiq Sans", cursive;
+}
+
+#contact .containers .contactForm{
+    width:40%;
+    padding: 40px;
+    background: #fff;
+}
+#contact .containers .contactForm h2{
+    font-size: 30px;
+    color: #333;
+    font-weight: bold;
+    font-family: 'Nunito', sans-serif;
+
+
+}
+#contact .containers .contactForm .inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+    font-family: "Balsamiq Sans", cursive;
+}
+#contact .containers .contactForm .inputBox input,
+#contact .containers .contactForm .inputBox textarea {
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+#contact .containers .contactForm .inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+
+}
+#contact .containers .contactForm .inputBox input:focus ~ span,
+#contact .containers .contactForm .inputBox input:valid ~ span,
+#contact .containers .contactForm .inputBox textarea:focus ~ span,
+#contact .containers .contactForm .inputBox textarea:valid ~ span{
+    color: black;
+    font-size: 12px;
+    transform: translateY(-20px);
+
+}
+#contact .containers .contactForm .inputBox input[type="submit"]{
+    width: 100px;
+    background: rgb(99, 93, 93);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+footer {
+    text-align: center;
+    background: black;
+    color: white;
+    padding: 3px 20px;
+    font-family: 'Nunito', sans-serif;
+  }
+  @media (max-width: 768px)
+{
+
+  }
+
+
+
+
+
